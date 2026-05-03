@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>طرق حفظ السجلات</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --secondary: #7c3aed;
+      --accent: #16a34a;
+      --ink: #1f2937;
+      --bg1: #ecfeff;
+      --bg2: #f5f3ff;
+      --card: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+      color: var(--ink);
+      background: radial-gradient(circle at 10% 10%, #ccfbf1 0, transparent 35%),
+                  radial-gradient(circle at 90% 20%, #e9d5ff 0, transparent 35%),
+                  linear-gradient(160deg, var(--bg1), var(--bg2));
+      min-height: 100vh;
+      line-height: 1.9;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 40px auto;
+    }
+
+    .hero {
+      background: linear-gradient(120deg, rgba(15,118,110,0.95), rgba(124,58,237,0.9));
+      color: #fff;
+      border-radius: 24px;
+      padding: 48px 36px;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: -40% -20% auto auto;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.08);
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(1.8rem, 3vw, 2.8rem);
+      line-height: 1.4;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 800px;
+      font-size: 1.1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 22px;
+      margin-top: 28px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 20px;
+      padding: 24px;
+      border: 1px solid rgba(15,118,110,0.12);
+      box-shadow: 0 12px 25px rgba(15, 23, 42, 0.08);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 35px rgba(15, 23, 42, 0.12);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: var(--primary);
+      font-size: 1.25rem;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(124,58,237,0.12);
+      color: var(--secondary);
+      font-size: .85rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 8px;
+    }
+
+    ul { margin: 0; padding-right: 20px; }
+
+    .section {
+      margin-top: 32px;
+      background: #fff;
+      border-radius: 24px;
+      padding: 30px;
+      border: 1px solid rgba(22,163,74,.14);
+      box-shadow: 0 12px 25px rgba(0,0,0,.06);
+    }
+
+    .section h3 {
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-size: 1.4rem;
+    }
+
+    .checklist li { margin-bottom: 8px; }
+
+    footer {
+      text-align: center;
+      margin: 24px 0 8px;
+      color: #475569;
+      font-size: .95rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <h1>3.3 ما طرق حفظ السجلات؟</h1>
+      <p>
+        بعد الانتهاء من أعمالك اليومية، من الضروري تنظيم البيانات بطريقة دقيقة تضمن سهولة الوصول إليها لاحقًا.
+        تتنوع طرق الحفظ بين السجلات الورقية والسجلات الإلكترونية، ولكل طريقة مزاياها واعتباراتها العملية.
+      </p>
+    </header>
+
+    <section class="grid" aria-label="أنواع حفظ السجلات">
+      <article class="card">
+        <span class="tag">السجلات الورقية</span>
+        <h2>Manual Records</h2>
+        <p>
+          تتطلب هذه الطريقة كتابة البيانات يدويًا وتخزينها في ملفات منظمة. وهي مناسبة في بعض البيئات،
+          لكنها أبطأ في البحث والتعديل وتحتاج إلى مساحة تخزين فعلية.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">السجلات الإلكترونية</span>
+        <h2>Electronic Records</h2>
+        <p>
+          تعتمد على إدخال البيانات وحفظها باستخدام الحاسب أو الأجهزة الذكية، مما يسهّل البحث،
+          النسخ الاحتياطي، ومشاركة المعلومات بسرعة وكفاءة.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">برامج جداول البيانات</span>
+        <h2>Spreadsheet Software</h2>
+        <p>
+          تُعد من أكثر الأدوات شيوعًا في تنظيم السجلات، حيث تسمح بترتيب البيانات في صفوف وأعمدة
+          مع إمكانيات قوية للحساب والتنسيق والتحليل.
+        </p>
+      </article>
+    </section>
+
+    <section class="section">
+      <h3>أهمية السجلات الإلكترونية</h3>
+      <ul>
+        <li>الوصول السريع إلى البيانات عند الحاجة.</li>
+        <li>سهولة تحديث المعلومات وإجراء التعديلات.</li>
+        <li>تقليل الأخطاء الناتجة عن الإدخال اليدوي.</li>
+        <li>إمكانية الحفظ الاحتياطي وحماية الملفات من الفقد.</li>
+        <li>تحسين كفاءة العمل واتخاذ القرارات بناءً على بيانات دقيقة.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h3>إرشادات مهنية لحفظ السجلات بشكل ممتاز</h3>
+      <ul class="checklist">
+        <li>استخدم أسماء ملفات واضحة تتضمن التاريخ ونوع المحتوى.</li>
+        <li>أنشئ مجلدات رئيسية وفرعية وفق نظام ثابت وسهل الفهم.</li>
+        <li>حدّث السجلات بانتظام ولا تؤجل إدخال البيانات.</li>
+        <li>احتفظ بنسخة احتياطية دورية على وسيط آمن أو سحابة موثوقة.</li>
+        <li>تحقق من دقة الأرقام قبل الحفظ النهائي.</li>
+        <li>احمِ الملفات الحساسة بكلمة مرور قوية.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h3>أسئلة للمراجعة الذاتية</h3>
+      <ul>
+        <li>ما الفرق بين السجلات الورقية والإلكترونية في بيئة عملك؟</li>
+        <li>ما أفضل طريقة لتقليل الأخطاء عند إدخال البيانات؟</li>
+        <li>كيف ستطبق النسخ الاحتياطي ضمن روتينك اليومي؟</li>
+      </ul>
+    </section>
+
+    <footer>
+      تصميم عربي احترافي لعرض محتوى درس «طرق حفظ السجلات» بشكل عصري وواضح.
+    </footer>
+  </main>
+</body>
+</html>
